@@ -1,0 +1,6 @@
+11:09:27 **** Incremental Build of configuration Release for project my_free_rtos_project ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:09:27 Build Finished (took 461ms)
+

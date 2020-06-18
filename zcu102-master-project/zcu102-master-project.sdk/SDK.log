@@ -86,3 +86,195 @@ con
 ----------------End of Script----------------
 
 10:58:34 INFO  : Launch script is exported to file '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello_world.elf_on_local.tcl'
+11:00:35 INFO  : Disconnected from the channel tcfchan#1.
+11:02:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:21 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A47339' is selected.
+11:02:21 INFO  : 'jtag frequency' command is executed.
+11:02:21 INFO  : Sourcing of '/tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:02:21 INFO  : Context for 'APU' is selected.
+11:02:22 INFO  : Hardware design information is loaded from '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf'.
+11:02:22 INFO  : 'configparams force-mem-access 1' command is executed.
+11:02:22 INFO  : Context for 'APU' is selected.
+11:02:22 INFO  : Sourcing of '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl' is done.
+11:02:23 INFO  : 'psu_init' command is executed.
+11:02:24 INFO  : 'after 1000' command is executed.
+11:02:24 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:02:25 INFO  : 'after 1000' command is executed.
+11:02:25 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:02:25 INFO  : 'catch {psu_protection}' command is executed.
+11:02:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:02:25 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:02:25 INFO  : The application '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/hello_world/Debug/hello_world.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:02:25 INFO  : 'configparams force-mem-access 0' command is executed.
+11:02:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+loadhw -hw /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+source /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+rst -processor
+dow /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/hello_world/Debug/hello_world.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:02:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:02:25 INFO  : 'con' command is executed.
+11:02:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+con
+----------------End of Script----------------
+
+11:02:25 INFO  : Launch script is exported to file '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello_world.elf_on_local.tcl'
+11:02:48 INFO  : Disconnected from the channel tcfchan#2.
+11:04:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:04:01 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A47339' is selected.
+11:04:01 INFO  : 'jtag frequency' command is executed.
+11:04:01 INFO  : Sourcing of '/tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:04:01 INFO  : Context for 'APU' is selected.
+11:04:01 INFO  : Hardware design information is loaded from '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf'.
+11:04:01 INFO  : 'configparams force-mem-access 1' command is executed.
+11:04:01 INFO  : Context for 'APU' is selected.
+11:04:01 INFO  : Sourcing of '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl' is done.
+11:04:02 INFO  : 'psu_init' command is executed.
+11:04:03 INFO  : 'after 1000' command is executed.
+11:04:03 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:04:04 INFO  : 'after 1000' command is executed.
+11:04:04 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:04:04 INFO  : 'catch {psu_protection}' command is executed.
+11:04:04 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:04:04 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:04:05 INFO  : The application '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/my_free_rtos_project/Debug/my_free_rtos_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:04:05 INFO  : 'configparams force-mem-access 0' command is executed.
+11:04:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+loadhw -hw /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+source /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+rst -processor
+dow /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/my_free_rtos_project/Debug/my_free_rtos_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:04:05 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:04:05 INFO  : 'con' command is executed.
+11:04:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+con
+----------------End of Script----------------
+
+11:04:05 INFO  : Launch script is exported to file '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_my_free_rtos_project.elf_on_local.tcl'
+11:07:12 INFO  : Disconnected from the channel tcfchan#3.
+11:07:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:04 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A47339' is selected.
+11:08:04 INFO  : 'jtag frequency' command is executed.
+11:08:04 INFO  : Sourcing of '/tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:08:04 INFO  : Context for 'APU' is selected.
+11:08:04 INFO  : Hardware design information is loaded from '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf'.
+11:08:04 INFO  : 'configparams force-mem-access 1' command is executed.
+11:08:04 INFO  : Context for 'APU' is selected.
+11:08:04 INFO  : Sourcing of '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl' is done.
+11:08:05 INFO  : 'psu_init' command is executed.
+11:08:06 INFO  : 'after 1000' command is executed.
+11:08:06 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:08:07 INFO  : 'after 1000' command is executed.
+11:08:07 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:08:07 INFO  : 'catch {psu_protection}' command is executed.
+11:08:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:08:07 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:08:08 INFO  : The application '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/my_free_rtos_project/Debug/my_free_rtos_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:08:08 INFO  : 'configparams force-mem-access 0' command is executed.
+11:08:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+loadhw -hw /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+source /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+rst -processor
+dow /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/my_free_rtos_project/Debug/my_free_rtos_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:08:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:08:08 INFO  : 'con' command is executed.
+11:08:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+con
+----------------End of Script----------------
+
+11:08:08 INFO  : Launch script is exported to file '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_my_free_rtos_project.elf_on_local.tcl'
+11:09:33 INFO  : Disconnected from the channel tcfchan#4.
+11:09:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:09:39 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A47339' is selected.
+11:09:39 INFO  : 'jtag frequency' command is executed.
+11:09:39 INFO  : Sourcing of '/tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+11:09:39 INFO  : Context for 'APU' is selected.
+11:09:39 INFO  : Hardware design information is loaded from '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf'.
+11:09:39 INFO  : 'configparams force-mem-access 1' command is executed.
+11:09:39 INFO  : Context for 'APU' is selected.
+11:09:39 INFO  : Sourcing of '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl' is done.
+11:09:40 INFO  : 'psu_init' command is executed.
+11:09:41 INFO  : 'after 1000' command is executed.
+11:09:41 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+11:09:42 INFO  : 'after 1000' command is executed.
+11:09:42 INFO  : 'psu_ps_pl_reset_config' command is executed.
+11:09:42 INFO  : 'catch {psu_protection}' command is executed.
+11:09:42 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:09:42 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+11:09:43 INFO  : The application '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/my_free_rtos_project/Debug/my_free_rtos_project.elf' is downloaded to processor 'psu_cortexa53_0'.
+11:09:43 INFO  : 'configparams force-mem-access 0' command is executed.
+11:09:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+loadhw -hw /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+source /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+rst -processor
+dow /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/my_free_rtos_project/Debug/my_free_rtos_project.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:09:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+11:09:43 INFO  : 'con' command is executed.
+11:09:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+con
+----------------End of Script----------------
+
+11:09:43 INFO  : Launch script is exported to file '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_my_free_rtos_project.elf_on_local.tcl'
