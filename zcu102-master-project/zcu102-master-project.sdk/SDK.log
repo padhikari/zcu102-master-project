@@ -1,0 +1,88 @@
+10:23:35 INFO  : Registering command handlers for SDK TCF services
+10:23:36 INFO  : Launching XSCT server: xsct -n -interactive /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/temp_xsdb_launch_script.tcl
+10:23:38 INFO  : XSCT server has started successfully.
+10:23:38 INFO  : Successfully done setting XSCT server connection channel  
+10:23:38 INFO  : Successfully done setting SDK workspace  
+10:23:38 INFO  : Processing command line option -hwspec /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper.hdf.
+10:24:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:48 ERROR : (XSDB Server)Hangup
+
+10:35:21 INFO  : Registering command handlers for SDK TCF services
+10:35:22 INFO  : Launching XSCT server: xsct -n -interactive /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/temp_xsdb_launch_script.tcl
+10:35:24 INFO  : XSCT server has started successfully.
+10:35:24 INFO  : Successfully done setting XSCT server connection channel  
+10:35:24 INFO  : Successfully done setting SDK workspace  
+10:35:24 INFO  : Processing command line option -hwspec /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper.hdf.
+10:35:24 INFO  : Checking for hwspec changes in the project Base_Zynq_MPSoC_wrapper_hw_platform_0.
+10:35:31 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1592500858000,  Project:1592500816000
+10:35:31 INFO  : The hardware specification for project 'Base_Zynq_MPSoC_wrapper_hw_platform_0' is different from /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper.hdf.
+10:35:31 INFO  : Copied contents of /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper.hdf into /Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf.
+10:35:40 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:35:40 INFO  : Clearing existing target manager status.
+10:35:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:35:40 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:36:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:36:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A1C7AC" && level==0} -index 0' command is executed.
+10:36:54 ERROR : bitstream is not compatible with the target revision, use -no-revision-check to allow programming
+10:46:03 INFO  : Registering command handlers for SDK TCF services
+10:46:04 INFO  : Launching XSCT server: xsct -n -interactive /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/temp_xsdb_launch_script.tcl
+10:46:06 INFO  : XSCT server has started successfully.
+10:46:06 INFO  : Successfully done setting XSCT server connection channel  
+10:46:06 INFO  : Successfully done setting SDK workspace  
+10:46:06 INFO  : Processing command line option -hwspec /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper.hdf.
+10:46:06 INFO  : Checking for hwspec changes in the project Base_Zynq_MPSoC_wrapper_hw_platform_0.
+10:46:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339" && level==0} -index 0' command is executed.
+10:46:16 ERROR : bitstream is not compatible with the target revision, use -no-revision-check to allow programming
+10:46:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:46:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339" && level==0} -index 0' command is executed.
+10:46:33 ERROR : bitstream is not compatible with the target revision, use -no-revision-check to allow programming
+10:58:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:58:30 INFO  : Jtag cable 'Digilent JTAG-SMT2NC 210308A47339' is selected.
+10:58:30 INFO  : 'jtag frequency' command is executed.
+10:58:30 INFO  : Sourcing of '/tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl' is done.
+10:58:30 INFO  : Context for 'APU' is selected.
+10:58:30 INFO  : Hardware design information is loaded from '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf'.
+10:58:30 INFO  : 'configparams force-mem-access 1' command is executed.
+10:58:30 INFO  : Context for 'APU' is selected.
+10:58:30 INFO  : Sourcing of '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl' is done.
+10:58:31 INFO  : 'psu_init' command is executed.
+10:58:32 INFO  : 'after 1000' command is executed.
+10:58:32 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+10:58:33 INFO  : 'after 1000' command is executed.
+10:58:33 INFO  : 'psu_ps_pl_reset_config' command is executed.
+10:58:33 INFO  : 'catch {psu_protection}' command is executed.
+10:58:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:58:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+10:58:34 INFO  : The application '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/hello_world/Debug/hello_world.elf' is downloaded to processor 'psu_cortexa53_0'.
+10:58:34 INFO  : 'configparams force-mem-access 0' command is executed.
+10:58:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /tools/Xilinx/SDK/2019.1/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+loadhw -hw /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+source /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/Base_Zynq_MPSoC_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+rst -processor
+dow /home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/hello_world/Debug/hello_world.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:58:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+10:58:34 INFO  : 'con' command is executed.
+10:58:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Digilent JTAG-SMT2NC 210308A47339"} -index 1
+con
+----------------End of Script----------------
+
+10:58:34 INFO  : Launch script is exported to file '/home/pabitra/workspace/zcu102-project/zcu102-master-project/zcu102-master-project.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_hello_world.elf_on_local.tcl'
